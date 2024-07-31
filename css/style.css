@@ -1,0 +1,340 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/*colors-
+green-#159b48;
+white-#fff;
+dark green,black-#000;
+
+
+
+*/
+body {
+    
+    margin: 0;
+    padding: 2rem;
+    padding-top: 10px;
+    box-sizing: border-box;
+    font-size: 0.75rem; 
+    line-height: 1.5; 
+}
+
+header {
+    background: #fff;
+    padding: 20px;
+    border-bottom: 2px solid #ddd;
+    text-align: center;
+    line-height: 1.5;
+}
+
+header h1 {
+    font-family: "DM Sans", sans-serif;
+    text-align: left;
+    color: #f0f0f0;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+header h3 {
+    font-family: "DM Sans", sans-serif;
+    text-align: left;
+    color: #f0f0f0;
+    
+    line-height: 1.5;
+}
+
+nav ul {
+    color: #f0f0f0;
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column; 
+    text-align: left; 
+    line-height: 1.5;
+}
+
+nav ul li {
+    color: #ffffff;
+    text-align: left;
+    width: 100%; 
+    border-bottom: 0.8px solid #cbcbcb; 
+    line-height: 1.5;
+}
+
+nav ul li a {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 900;
+
+    color: #f0f0f0;
+    font-size: 0.75rem;
+    text-decoration: none;
+    padding: 10px; 
+    width: 100%; 
+    text-align: left; 
+    transition: background-color 0.3s ease;
+    line-height: 1.5;
+}
+html{
+    padding-right: 2rem;
+}
+
+.masthead {
+    background-image: url('../images/leaves2.jpg');
+    background-size: cover;
+    line-height: 1.5;
+}
+
+main {
+    background-color: #000;
+    padding-top: 1.1rem;
+    padding-bottom: 1.2rem;
+    margin-top: 20px;
+    margin-top: 20px;
+    text-align: left; 
+    padding-left: 2rem;
+    padding-right: 2rem;
+    line-height: 1.5;
+}
+
+#controls {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row; 
+    -ms-flex-align: start;
+    align-items: left; 
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+#controls button {
+   
+    background: none;
+    border: solid; 
+    border-width: 2px;
+    border-color: #159b48;
+    align-items: left;
+    margin: 5px 20px; 
+    cursor: pointer;
+    width: 100%;
+    padding: 0.5rem 0.6rem;
+    line-height: 1.5;
+}
+
+#controls button:hover {
+    background-color: #159b48;
+}
+
+#controls button.active {
+    background-color: #159b48; 
+    transition: all 0.3s ease;
+}
+
+.active-indicator {
+    position: relative;
+    align-items: flex-start;
+    background-color: #000;
+    height: 3px;
+    transition: all 0.3s ease;
+}
+
+#icon1, #icon2, #icon3 {
+    color: #f0f0f0;
+    align-items: left;
+    font-size: 1.5rem; 
+    line-height: 1.5;
+}
+
+#dynamic-content {
+    width: 100%; 
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column; 
+    padding-right: 0 2rem; 
+    line-height: 1.5;
+}
+
+#dynamic-content h2 {
+    font-family: "DM Sans", sans-serif;
+    color: #f0f0f0;
+    
+    margin-bottom: 2px;
+    line-height: 1.5;
+}
+
+#dynamic-content p {
+    font-family: "Roboto", sans-serif;
+    margin-right: 2px;
+    color: #e9e7e7;
+    line-height: 1.5; 
+}
+
+footer {
+    background: #000000;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+    text-align: left; 
+    line-height: 1.5;
+}
+
+footer ul {
+    background: #000;
+    list-style-type: none;
+    padding: 5px 10px;
+    margin: 0;
+    display: flex; 
+    justify-content: flex-start; 
+    line-height: 1.5;
+}
+
+footer ul li {
+    font-size: 1.5rem;
+    text-align: left;
+    align-items: left;
+    margin-right: 40px; 
+    line-height: 1.5;
+    color: #159b48;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+}
+
+.flex-item {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+#controls {
+    position: relative; 
+    line-height: 1.5;
+}
+
+.active-indicator {
+    position: absolute;
+    background-color: #000;
+    height: 0px;
+    transition: all 0.3s ease;
+    line-height: 1.5;
+}
+
+.dynamic-image {
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    line-height: 1.5;
+}
+
+/* Media query for tablets and larger screens */
+@media (min-width: 60rem) {
+    body {
+        margin: auto;
+        font-size: 1rem; 
+        max-width: 60rem; 
+    }
+    
+    nav ul {
+        flex-direction: row; 
+        justify-content: space-between; 
+        width: 100%; 
+    }
+    
+    nav ul li {
+        color: white;
+        margin: 0px;
+        flex: 1; 
+        text-align: center;
+    }
+    html{
+      
+        padding-right: 3.5rem;
+    }
+    
+    nav ul li a {
+        font-family: "DM Sans", sans-serif;
+        font-weight: 900;
+        padding: 0.5rem 3rem;
+        color: #ffffff;
+       
+        justify-content: space-around;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    nav ul li a:hover {
+        background-color: #a4a2a2;
+        color: #000;
+    }
+
+    #controls {
+        flex-direction: row; 
+    }
+
+    #controls button {
+        margin: 5px 10px; 
+        width: auto; 
+        padding: 0.5rem 2rem;
+    }
+
+    #dynamic-content {
+        align-items: left; 
+        display: grid;
+        grid-template-areas: 
+            "t t"
+            "i p";
+        
+    }
+    
+    #dynamic-content h2 {
+        font-family: "DM Sans", sans-serif;
+        grid-area: t;
+    }
+    
+    #dynamic-content img {
+        grid-area: i;
+        margin-right: 1rem;
+    }
+
+    #dynamic-content p {
+        font-family: "Roboto", sans-serif;
+        grid-area: p;
+    }
+
+    .masthead {
+        background-image: url('../images/leaves2.jpg');
+        background-size: cover;
+    }
+    
+    footer ul {
+        justify-content: flex-start; 
+    }
+
+    .flex-item {
+        flex: 1; 
+        margin: 10px; 
+    }
+
+    nav ul li {
+        border-bottom: none; 
+    }
+
+    #icon1, #icon2, #icon3 {
+        align-items: left;
+        font-size: 2.2rem; 
+    }
+
+
+    footer ul li {
+        font-size: 2.5rem;
+        
+        margin-right: 40px; 
+        line-height: 1.5;
+        color: #159b48;
+    }
+}
